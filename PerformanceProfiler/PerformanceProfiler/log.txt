@@ -1,0 +1,9 @@
+NO1, Desc:利大
+filename:d:\cc++file\performanceprofiler\performanceprofiler\test.cpp, function:Pthread, line:51
+calltime:3, costtime:3002
+NO2, Desc:利大
+filename:d:\cc++file\performanceprofiler\performanceprofiler\test.cpp, function:TestPthread, line:58
+calltime:1, costtime:3018
+NO3, Desc:利大
+filename:d:\cc++file\performanceprofiler\performanceprofiler\test.cpp, function:main, line:71
+calltime:1, costtime:3018
