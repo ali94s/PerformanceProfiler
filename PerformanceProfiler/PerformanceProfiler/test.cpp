@@ -1,4 +1,4 @@
-#include"PerformanceProfile.h"
+#include"PerformanceProfiler.h"
 #include<iostream>
 //#include<time.h>
 //#include<windows.h>
@@ -55,7 +55,7 @@ void Pthread(int n)
 
 void TestPthread()
 {
-	BEGIN(pthread, "利大");
+	//BEGIN(pthread, "利大");
 	thread t1(Pthread, 1);
 	thread t2(Pthread, 2);
 	thread t3(Pthread, 3);
@@ -63,19 +63,22 @@ void TestPthread()
 	t1.join();
 	t2.join();
 	t3.join();
-	END(pthread);
+	//END(pthread);
 }
 int main()
 {
+	SET_PERFORMANCE_PROFILER_OPTIONS(PPCO_PROFILER | PPCO_SAVE_TO_CONSOLE | PPCO_SAVE_BY_COST_TIME | PPCO_SAVE_TO_FILE);
 	//TestFib();
 	BEGIN(pthread,"利大");
 	TestPthread();
+	//TestFib();
 	END(pthread);
-	//PPtest();
 	//cout << Fib(0) << endl;
 	//cout << Fib(1) << endl;
 	//cout << Fib(2) << endl;
 	//cout << Fib(4) << endl;
 	//system("pause");
-	return 0;
+	//PerformanceProfiler::GetInstance()->Output();
+	//system("pause");
+	return 0; 
 }

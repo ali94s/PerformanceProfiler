@@ -1,9 +1,12 @@
-NO1, Desc:利大
-filename:d:\cc++file\performanceprofiler\performanceprofiler\test.cpp, function:Pthread, line:51
-calltime:3, costtime:3002
-NO2, Desc:利大
-filename:d:\cc++file\performanceprofiler\performanceprofiler\test.cpp, function:TestPthread, line:58
-calltime:1, costtime:3018
-NO3, Desc:利大
-filename:d:\cc++file\performanceprofiler\performanceprofiler\test.cpp, function:main, line:71
-calltime:1, costtime:3018
+NO1. Description:利大
+FileName:test.cpp, Fuction:Pthread, Line:51
+ThreadId:6468,Cost Time:3.01,Call Count:1
+ThreadId:7748,Cost Time:1.01,Call Count:1
+ThreadId:8864,Cost Time:2.01,Call Count:1
+Total Cost Time:6.04, Total Call Count:3
+
+NO2. Description:利大
+FileName:test.cpp, Fuction:main, Line:72
+ThreadId:6208,Cost Time:3.01,Call Count:1
+Total Cost Time:3.01, Total Call Count:1
+
